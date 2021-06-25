@@ -1,8 +1,10 @@
 // is array?
 const isArray = a => {
-  console.log(Array.isArray(a)); //true, false
+  const test = Array.isArray(a);
+  console.log('array', test); //true, false
+  return test;
 };
-isArray([]);
-isArray(2);
+// isArray([]);
+// isArray(2);
 
 module.exports = isArray;
