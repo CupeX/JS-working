@@ -9,3 +9,5 @@ const caseToggler = prop => {
   console.log('input:', prop, 'output:', inverted.join(''));
 };
 caseToggler('teSt AGain for MY BOSSmang');
+
+module.exports = caseToggler;

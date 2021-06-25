@@ -1,6 +1,8 @@
 // is array?
-const is_array = a => {
+const isArray = a => {
   console.log(Array.isArray(a)); //true, false
 };
-is_array([]);
-is_array(2);
+isArray([]);
+isArray(2);
+
+module.exports = isArray;

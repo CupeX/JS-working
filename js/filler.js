@@ -31,3 +31,5 @@ const newFiller = (a, b) => {
   });
 };
 newFiller(9, 7);
+
+module.exports = filler;

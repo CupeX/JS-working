@@ -31,3 +31,5 @@ console.log(
     return a - b;
   })
 );
+
+module.exports = union;

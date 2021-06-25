@@ -3,3 +3,5 @@ const letterSorting = prop => {
   console.log(`input: ${prop}, output: ${sorted}`);
 };
 letterSorting('webmaster');
+
+module.exports = letterSorting;

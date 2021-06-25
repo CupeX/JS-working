@@ -17,3 +17,5 @@ const palindromeChecker = prop => {
   }
 };
 palindromeChecker('madam');
+
+module.exports = palindromeChecker;
