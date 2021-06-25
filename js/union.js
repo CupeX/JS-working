@@ -14,6 +14,7 @@ const union = (a, b) => {
   });
 
   console.log(uniqueArr);
+  return uniqueArr;
 };
 union(arr1, arr2);
 

@@ -7,6 +7,7 @@ const caseToggler = prop => {
     }
   });
   console.log('input:', prop, 'output:', inverted.join(''));
+  return inverted.join('');
 };
 caseToggler('teSt AGain for MY BOSSmang');
 
