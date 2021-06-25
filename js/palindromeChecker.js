@@ -1,22 +1,23 @@
 const palindromeChecker = prop => {
-  const test = prop.split('');
-  const lastLetter = test[test.length - 1];
+  const word = prop.split('');
 
-  // for (var i = 0; i < test.length; i++) {
-  //   console.log('first:', test[i], 'last:', lastLetter, 'lenght:', test.length);
-  //   console.log();
-  //   if (test[i] == lastLetter) {
-  //     test.pop();
-  //     console.log('2', test);
-  //     // return test;
-  //   } else if (test.length === 1) {
-  //     console.log("it's a palindrom");
-  //   } else if (test[i] !== lastLetter) {
-  //     console.log("it's not a palindrom");
-  //   }
-  // }
-  return test.join('');
+  for (var i = 0; i < word.length; i++) {
+    const firstLetter = word[i];
+    const lastLetter = word[word.length - (i + 1)];
+
+    if (firstLetter === lastLetter) {
+      console.log(firstLetter, lastLetter, i, word.length - i);
+
+      if (i === word.length - i || i + 1 === word.length - i) {
+        console.log("it's a palindrome", word.join(''));
+        return word.join('');
+      }
+    } else {
+      console.log("it's not a palindrom:", word.join(''));
+      return word.join('');
+    }
+  }
 };
-palindromeChecker('madam');
+palindromeChecker('anavolimilovana');
 
 module.exports = palindromeChecker;

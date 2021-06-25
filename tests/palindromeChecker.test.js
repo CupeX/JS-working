@@ -1,5 +1,9 @@
 const palindromeChecker = require('../js/palindromeChecker');
 
-test('checking if is palindrome', () => {
-  expect(palindromeChecker('madam')).toBe('madam');
+test('checking if truthy', () => {
+  expect(palindromeChecker('anavolimilovana')).toEqual(true);
+});
+
+test('check if equal', () => {
+  expect(palindromeChecker('dgasgkas')).toEqual(false);
 });
