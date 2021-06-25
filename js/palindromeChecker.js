@@ -10,11 +10,11 @@ const palindromeChecker = prop => {
 
       if (i === word.length - i || i + 1 === word.length - i) {
         console.log("it's a palindrome", word.join(''));
-        return word.join('');
+        return true;
       }
     } else {
       console.log("it's not a palindrom:", word.join(''));
-      return word.join('');
+      return false;
     }
   }
 };
