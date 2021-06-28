@@ -56,3 +56,4 @@ const flattener = prop => {
 flattener(arr4);
 
 module.exports = union;
+module.exports = flattener;
