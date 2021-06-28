@@ -27,10 +27,18 @@ const reduceFn = prop => {
     }
     return acc;
   }, []);
-  console.log('sorted', sorted);
+  console.log(
+    'sorted',
+    sorted.sort((a, b) => {
+      return a - b;
+    })
+  );
+  return sorted.sort((a, b) => {
+    return a - b;
+  });
 };
 
-reduceFn(arr3);
+// reduceFn(arr3);
 
 // union with recursion()
 const arr4 = arr1.concat(arr2);
@@ -45,12 +53,12 @@ const flattener = prop => {
       const extract = prop[i];
       flatArray = [...flatArray, ...extract];
       sortedArr = [...flatArray];
-      console.log('flat', flatArray, 'sorted', sortedArr);
+
       flattener(flatArray);
     }
   }
-  reduceFn(sortedArr);
-  return sortedArr;
+
+  return reduceFn(sortedArr);
 };
 
 flattener(arr4);

@@ -8,7 +8,7 @@ test('merge of array with unique items, sorted', () => {
 });
 
 test('merge of array with unique items, sorted', () => {
-  expect(flattener([1, 2, 3, [4, [5]]], [2, 2, [3], 4, [[[5]]]])).toStrictEqual(
-    [1, 2, 3, 4, 5]
-  );
+  expect(
+    flattener([1, 47, 120, 23, 2, 3, 35, [4, [5]]], [2, 2, [3], 4, [[[5]]]])
+  ).toStrictEqual([1, 2, 3, 4, 5, 23, 35, 47, 120]);
 });
