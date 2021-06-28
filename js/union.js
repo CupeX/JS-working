@@ -14,7 +14,6 @@ const union = (a, b) => {
     return a - b;
   });
 
-  // console.log(uniqueArr);
   return uniqueArr;
 };
 union(arr1, arr2);
@@ -27,18 +26,13 @@ const reduceFn = prop => {
     }
     return acc;
   }, []);
-  console.log(
-    'sorted',
-    sorted.sort((a, b) => {
-      return a - b;
-    })
-  );
+
   return sorted.sort((a, b) => {
     return a - b;
   });
 };
 
-// reduceFn(arr3);
+reduceFn(arr3);
 
 // union with recursion()
 const arr4 = arr1.concat(arr2);
