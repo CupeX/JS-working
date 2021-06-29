@@ -1,3 +1,4 @@
+// found on stackOverflow
 const multiplier = prop => {
   const gcd = (a, b) => (a ? gcd(b % a, a) : b);
   const lcm = (a, b) => (a * b) / gcd(a, b);
@@ -8,3 +9,5 @@ const multiplier = prop => {
 
 multiplier([5, 7, 11, 55, 77]);
 multiplier([1, 2, 3, 4, 5, 6]);
+
+module.exports = multiplier;
